@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="icon" href="./Imgs/logo1.jpeg">
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Make Trip Travel</title>
+  </head>
+  <body>
+
+    <!-- BUTTONS WHATSAPP AND PHONE -->
+
+    <div class="whatsapp">
+      <a href=" https://wa.me/447472906476" target="_blank"><img src="./Imgs/whatsapp-icon-2048x2048-64wjztht.png" width="60" alt=""></a>
+    </div>
+
+    <div class="phone">
+      <a href="tel:+447472906476"><img src="./Imgs/phone.jpg" width="60" alt=""></a>
+    </div>
+
+    <!-- HEADER TOP  -->
+    <div>
+      <div class="header__top">
+
+        <div class="new-div">
+          <a href="./index.html">
+            <img src="./Imgs/logo2-removebg-preview.png" height="120" width="120" alt="" />
+          </a>
+          <a href="./index.html">MAKETRIPTRAVEL.CO.UK</a>
+        </div>
+        
+    
+    
+        <div class="header__phone">
+
+          <div class="header__phone-child">
+          <img width="48" height="48" src="https://img.icons8.com/color/48/man-on-phone-skin-type-1.png" alt="man-on-phone-skin-type-1" class="header__phone-img"/>
+          </div>
+          <div class="header__phone-child">
+            <p class="header__phone-p">For Information & Reservations Call On</p>
+            <a  href="tel:+447472906476" class="header__top-btn">Phone +447472906476</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <div class="blue__top">
+      <div class="row">
+
+        <p>  <span>Get Great Deals!</span> Choose from 500+ airlines for low airfares. </p>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav>
+      <div class="nav__parent row">
+          
+          <div>
+            <a class="nav__logo" href="./index.html">HOLIDAYS</a>
+            <a class="nav__logo" href="./index.html">FLIGHTS</a>
+            <a class="nav__logo" href="./index.html">HOTELS</a>
+          </div>
+        <div class="nav__links">
+          <li><a class="nav__link" href="./index.html">Home</a></li>
+          <li><a class="nav__link" href="./about.html">About</a></li>
+          <li><a class="nav__link" href="./news.html">News & Update</a></li>
+          <li><a class="nav__link" href="./contact.html">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+
+    <header id="inquiry" >
+      <div class="row headerr">
+      <div class="header__div">
+
+  <div class="header__text">
+    <h3 class="header-h3">WorldWide Trip & Holidays</h3>
+    <p class="header__p1">BRITISH LEADING TOUR AND TRAVELS COMPANY</p>
+    <h1 class="header__h1">Book Flight Now !</h1>
+    <p class="header__p2">
+      Experience the various exciting tour and travel packages and Make
+      hotel reservations, find vacation packages, search cheap hotels and
+      events
+    </p>
+    <div class="header__btns">
+      <button class="header__btn">
+        <i class="fa-solid fa-umbrella-beach"></i>Tour
+      </button>
+      <button class="header__btn">
+        <i class="fa-solid fa-plane-departure"></i>Flight
+      </button>
+    </div>
+    <div class="header__btns">
+      <button class="header__btn">
+        <i class="fa-solid fa-car-side"></i>Car Rentals
+      </button>
+      <button class="header__btn">
+        <i class="fa-solid fa-bed"></i>Hotels
+      </button>
+    </div>
+  </div>
+
+      </div>
+    
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="header__form">
+          <h3 class="header__form-h2">Search For Cheap Flights</h2>
+
+           
+
+            <div class="header__formtags">
+              <!-- <input type="hidden" name="access_key" value="85c5f35c-0859-4256-86eb-01430cc1f48a"> -->
+              <input type="hidden" name="access_key" value="f52e73e5-b83b-4f9d-a0ab-f5cd2841e1dc">
+
+           <input type="text" name="Name" class="form__width" placeholder="Enter Your Name" required>
+
+           <div class="form__partiton">
+
+            <input type="text" name="Email" placeholder="Enter Your Email" required>
+            <input type="text" name="Number" placeholder="Your Phone Number " required>
+           </div>
+           
+         
+           <select id="Cabin Class" name="Flying From" class="form__width" required>
+            <option value="Select Cabin Class">Flying From</option>
+            <option value="London Heathrow, LHR">Lodon Heathrow, LHR</option>
+            <option value="London Gatwick, LGW">London Gatwick, LGW</option>
+            <option value="London City, LCY">London City, LCY</option>
+            <option value="Manchester, MAN">Manchester , MAN</option>
+            <option value="Birmingham, BHX">Birmingham, BHX</option>
+            <option value="Edinburgh, EDI">Edinburgh, EDI</option>
+            <option value="Aber Dean, ABZ">Aber Dean, ABZ</option>
+            <option value="Belfast, BFS">Belfast, BFS</option>
+            <option value="Abuja, ABV">Abuja, ABV</option>
+            <option value="Port Harcourt, PHC">Port Harcourt, PHC</option>
+            <option value="Kano, KAN">Kano, KAN</option>
+            <option value="Owerri, QOW">Owerri, QOW</option>
+            <option value="Warri, QRW">Warri, QRW</option>
+            <option value="Perth, PER">Perth, PER</option>
+            <option value="Melbourne, MEL">Melbourne, MEL</option>
+            <option value="Sydney, SYD">Sydney, SYD</option>
+            <option value="Johannesburg, JNB">Johannesburg, JNB</option>
+            <option value="Cape Town, CPT">Cape Town, CPT</option>
+            <option value="Durban, DUR">Durban, DUR</option>
+            <option value="Port Elizabeth, BLZ">Port Elizabeth, BLZ</option>
+            <option value="Harare, HRE">Harare, HRE</option>
+            <option value="Bulawayo, BUQ">Bulawayo, BUQ</option>
+            <option value="Victoria, VFA">Victoria, VFA</option>
+            <option value="Nariobi, NBO">Nariobi, NBO</option>
+            <option value="New York, NYC">New York, NYC</option>
+            <option value="John F Kennedy, JFK">John F Kennedy, JFK</option>
+            <option value="Newark, EWR">Newark, EWR</option>
+            <option value="Philadelphia, PHL">Philadelphia, PHL</option>
+            <option value="Miami, MI">Miami, MI</option>
+            <option value="OrlLos Angeles, LAX">OrlLos Angeles, LAX</option>
+            <option value="Los Angeles, LAX">Los Angeles, LAX</option>
+            <option value="Lahore, LHE">Lahore, LHE</option>
+            <option value="Islamabad, ISB">Islamabad, ISB</option>
+            <option value="Kingston, KIN">Kingston, KIN</option>
+            <option value="Montego Bay, MBJ">Montego Bay, MBJ</option>
+            <option value="Kuwait, KWI">Kuwait, KWI</option>
+            <option value="Riyadah, RUH">Riyadah, RUH</option>
+            <option value="Abu Dhabi, AUH">Abu Dhabi, AUH</option>
+            <option value="Brussels, BRU">Brussels, BRU</option>
+            <option value="Bahrain, BAH">Bahrain, BAH</option>
+            <option value="Istanbul, IST">Istanbul, IST</option>
+            <option value="Beijing, BJS/PEK">Beijing, BJS/PEK</option>
+            <option value="Tripoli, TIP">Tripoli, TIP</option>
+            <option value="Kinshasa, FIH">Kinshasa, FIH</option>
+            <option value="Doha, DOH">Doha, DOH</option>
+            <option value="Accra, ACC">Accra, ACC</option>
+            <option value="Entebbe, EBB">Entebbe, EBB</option>
+            <option value="Lilongwe, LLW">Lilongwe, LLW</option>
+            <option value="Dar-e-Salaam, DAR">Dar-e-Salaam, DAR</option>
+            <option value="Frankfurt, FRA">Frankfurt, FRA</option>
+            <option value="Manila, MNL">Manila, MNL</option>
+            <option value="Zurich, ZRH">Zurich, ZRH</option>
+            <option value="Cairo, CAI">Cairo, CAI</option>
+            <option value="Bangkok, BKK">Bangkok, BKK</option>
+            <option value="Charles De Gaulle, CDG">Charles De Gaulle, CDG</option>
+            <option value="Amsterdam, AMS">Amsterdam, AMS</option>
+            <option value="Dubai, DXB">Dubai, DXB</option>
+            <option value="Madrid, MAD">Madrid, MAD</option>
+            <option value="Rome Fiumicino, FCO">Rome Fiumicino, FCO</option>
+            <option value="Bamako, BKO">Bamako, BKO</option>
+            <option value="Douala, DLA">Douala, DLA</option>
+            <option value="Lome, LFW">Lome, LFW</option>
+            <option value="Dakar, DKR">Dakar, DKR</option>
+            <option value="Casablanca, CMN">Casablanca, CMN</option>
+            <option value="Mauritius, MRU">Mauritius, MRU</option>
+            <option value="Banjul, BJL">Banjul, BJL</option>
+            <option value="Lusaka, LUN">Lusaka, LUN</option>
+            <option value="Luanda, LAD">Luanda, LAD</option>
+            <option value="Maputo, MPM">Maputo, MPM</option>
+            <option value="Rabat, RBA">Rabat, RBA</option>
+            <option value="Tunis, TUN">Tunis, TUN</option>
+            <option value="Addis Ababa, ADD">Addis Ababa, ADD</option>
+            <option value="Algeris, ALG">Algeris, ALG</option>
+          </select>
+
+
+
+          <select id="Cabin Class" name="Flying To" class="form__width" required>
+            <option value="Select Cabin Class">Flying To</option>
+            <option value="London Heathrow, LHR">Lodon Heathrow, LHR</option>
+            <option value="London Gatwick, LGW">London Gatwick, LGW</option>
+            <option value="London City, LCY">London City, LCY</option>
+            <option value="Manchester, MAN">Manchester , MAN</option>
+            <option value="Birmingham, BHX">Birmingham, BHX</option>
+            <option value="Edinburgh, EDI">Edinburgh, EDI</option>
+            <option value="Aber Dean, ABZ">Aber Dean, ABZ</option>
+            <option value="Belfast, BFS">Belfast, BFS</option>
+            <option value="Abuja, ABV">Abuja, ABV</option>
+            <option value="Port Harcourt, PHC">Port Harcourt, PHC</option>
+            <option value="Kano, KAN">Kano, KAN</option>
+            <option value="Owerri, QOW">Owerri, QOW</option>
+            <option value="Warri, QRW">Warri, QRW</option>
+            <option value="Perth, PER">Perth, PER</option>
+            <option value="Melbourne, MEL">Melbourne, MEL</option>
+            <option value="Sydney, SYD">Sydney, SYD</option>
+            <option value="Johannesburg, JNB">Johannesburg, JNB</option>
+            <option value="Cape Town, CPT">Cape Town, CPT</option>
+            <option value="Durban, DUR">Durban, DUR</option>
+            <option value="Port Elizabeth, BLZ">Port Elizabeth, BLZ</option>
+            <option value="Harare, HRE">Harare, HRE</option>
+            <option value="Bulawayo, BUQ">Bulawayo, BUQ</option>
+            <option value="Victoria, VFA">Victoria, VFA</option>
+            <option value="Nariobi, NBO">Nariobi, NBO</option>
+            <option value="New York, NYC">New York, NYC</option>
+            <option value="John F Kennedy, JFK">John F Kennedy, JFK</option>
+            <option value="Newark, EWR">Newark, EWR</option>
+            <option value="Philadelphia, PHL">Philadelphia, PHL</option>
+            <option value="Miami, MI">Miami, MI</option>
+            <option value="OrlLos Angeles, LAX">OrlLos Angeles, LAX</option>
+            <option value="Los Angeles, LAX">Los Angeles, LAX</option>
+            <option value="Lahore, LHE">Lahore, LHE</option>
+            <option value="Islamabad, ISB">Islamabad, ISB</option>
+            <option value="Kingston, KIN">Kingston, KIN</option>
+            <option value="Montego Bay, MBJ">Montego Bay, MBJ</option>
+            <option value="Kuwait, KWI">Kuwait, KWI</option>
+            <option value="Riyadah, RUH">Riyadah, RUH</option>
+            <option value="Abu Dhabi, AUH">Abu Dhabi, AUH</option>
+            <option value="Brussels, BRU">Brussels, BRU</option>
+            <option value="Bahrain, BAH">Bahrain, BAH</option>
+            <option value="Istanbul, IST">Istanbul, IST</option>
+            <option value="Beijing, BJS/PEK">Beijing, BJS/PEK</option>
+            <option value="Tripoli, TIP">Tripoli, TIP</option>
+            <option value="Kinshasa, FIH">Kinshasa, FIH</option>
+            <option value="Doha, DOH">Doha, DOH</option>
+            <option value="Accra, ACC">Accra, ACC</option>
+            <option value="Entebbe, EBB">Entebbe, EBB</option>
+            <option value="Lilongwe, LLW">Lilongwe, LLW</option>
+            <option value="Dar-e-Salaam, DAR">Dar-e-Salaam, DAR</option>
+            <option value="Frankfurt, FRA">Frankfurt, FRA</option>
+            <option value="Manila, MNL">Manila, MNL</option>
+            <option value="Zurich, ZRH">Zurich, ZRH</option>
+            <option value="Cairo, CAI">Cairo, CAI</option>
+            <option value="Bangkok, BKK">Bangkok, BKK</option>
+            <option value="Charles De Gaulle, CDG">Charles De Gaulle, CDG</option>
+            <option value="Amsterdam, AMS">Amsterdam, AMS</option>
+            <option value="Dubai, DXB">Dubai, DXB</option>
+            <option value="Madrid, MAD">Madrid, MAD</option>
+            <option value="Rome Fiumicino, FCO">Rome Fiumicino, FCO</option>
+            <option value="Bamako, BKO">Bamako, BKO</option>
+            <option value="Douala, DLA">Douala, DLA</option>
+            <option value="Lome, LFW">Lome, LFW</option>
+            <option value="Dakar, DKR">Dakar, DKR</option>
+            <option value="Casablanca, CMN">Casablanca, CMN</option>
+            <option value="Mauritius, MRU">Mauritius, MRU</option>
+            <option value="Banjul, BJL">Banjul, BJL</option>
+            <option value="Lusaka, LUN">Lusaka, LUN</option>
+            <option value="Luanda, LAD">Luanda, LAD</option>
+            <option value="Maputo, MPM">Maputo, MPM</option>
+            <option value="Rabat, RBA">Rabat, RBA</option>
+            <option value="Tunis, TUN">Tunis, TUN</option>
+            <option value="Addis Ababa, ADD">Addis Ababa, ADD</option>
+            <option value="Algeris, ALG">Algeris, ALG</option>
+          </select>
+
+
+
+
+           <div class="form__partiton">
+            <label for="Departing on">Departing On</label>
+            <input type="date" name="Departing On" placeholder="Departing On" required>
+            <label for="Departing on">Returing On</label>
+            <input type="date" name="Returning On" placeholder="Returning On" required>
+           </div>
+
+
+           <select id="Cabin Class" name="Airline" class="form__width" required>
+            <option value="Select Airline">Select Airline</option>
+            <option value="Air Farance, AF">Air Farance, AF</option>
+            <option value="Air India, AI">Air India, AI</option>
+            <option value="Royal Air Maroc, AT">Royal Air Maroc, AT</option>
+            <option value="Alitalia, Az">Alitalia, Az</option>
+            <option value="British Airways, BA">British Airways, BA</option>
+            <option value="British Midland, BD">British Midland, Bd</option>
+            <option value="Royal Brune, BI">Royal Burne, BI</option>  
+            <option value="Air China ,CA">Air China, Ca</option>  
+            <option value="Cathay Pacific, CX">Cath Pacific, CX</option>  
+            <option value="China Southern, CZ">China Southern, CZ</option>  
+            <option value="Emirates, EK">Emirates, EK</option>  
+            <option value="Ethiopian, ET">Ethiopian, ET</option>  
+            <option value="Etihad Airways, EY">Etihad Airways, EY</option>  
+            <option value="Gulf AIF, GF">Gulf AIF, GF</option>  
+            <option value="Uzbekistan Airways, HY">Uzbekistan Airways, HY</option>  
+            <option value="Iberai, IB">Iberai, IB</option>  
+            <option value="Kinghfisher Airline, IT">Kinghfisher Airline, IT</option>  
+            <option value="Korean Air, KE">Korean Air, KE</option>  
+            <option value="KLM Royal Dutch Airlines, KL">KLM Royal Dutch Airlines, KL</option>  
+            <option value="Kenya Airways, KQ">Kenya Airways, KQ</option>  
+            <option value="Kuwait Airways, KU">Kuwait Airways, KU</option>  
+            <option value="Lufthansa, LH">Lufthansa, LH</option>  
+            <option value="Swiss Airline, LX">Swiss Airline, LX</option>  
+            <option value="Air Madagascar, MD">Air Madagascar, MD</option>  
+            <option value="Malaysia Airline, MH">Malaysia Airline, MH</option>  
+            <option value="Air Mauritius, MK">Air Mauritius, MK</option>  
+            <option value="Lgypt Air, MS">Lgypt Air, MS</option>  
+            <option value="China Eastern, MU">China Eastern, MU</option>  
+            <option value="Air New zealand, NZ">Air New zealand, NZ</option>  
+            <option value="Austrian, OS">Austrian, OS</option>  
+            <option value="Asiana Airlines, OZ">Asiana Airlines, OZ</option>  
+            <option value="Qantas, QF">Qantas, QF</option>  
+            <option value="Qatar Airways, QR">Qatar Airways, QR</option>  
+            <option value="Royal Jordanian, RJ">Royal Jordanian, RJ</option>  
+            <option value="South Aferican Airways, SA">South Aferican Airways, SA</option>  
+            <option value="Brussels Airline, SN">Brussels Airline, SN</option>  
+            <option value="Aeroflot Russian, SU">Aeroflot Russian, SU</option>  
+            <option value="Saudi Arabean Airlines, SV">Saudi Arabean Airlines, SV</option>  
+            <option value="Thai, TG">Thai, TG</option>  
+            <option value="Turkish Airlines, TK">Turkish Airlines, TK</option>  
+            <option value="Tap Portugal, TP">Tap Portugal, TP</option>  
+            <option value="Tunis Air, TU">Tunis Air, TU</option>  
+            <option value="Air Zimbabwe, UM">Air Zimbabwe, UM</option>  
+            <option value="Virgin Atlantic, VS">Virgin Atlantic, VS</option>  
+            <option value="Arik Air, W3">Arik Air, W3</option>  
+            <option value="Oman Air, WY">Oman Air, WY</option>  
+            <option value="Pakistan International, PK">Pakistan International, PK</option>  
+          </select>
+
+      <select id="Cabin Class" name="Cabin Class" class="form__width" required>
+        <option value="Select Cabin Class">Select Cabin Class</option>
+        <option value="Economy Class">Economy Class</option>
+        <option value="Economy Premium Class">Economy Premium Class</option>
+        <option value="Business Class">Business Class</option>
+        <option value="First Class">First Class</option>
+      </select>
+         
+
+      <div class="form__partiton">
+
+        <input type="number" name="Adults (+12)" placeholder="Adults (12+)" required>
+        <input type="number" name="Children (2-12 Years)" placeholder="Children (2-12 Years)" required>
+       </div>
+
+       <input type="number" name="Infant (0-2 Years)" class="form__width" placeholder="Infant (0-2 Years)" required>
+
+
+      </div>
+      <div class="form__button">
+        <button class="form__btn" type="submit">BOOK NOW</button>
+      </div>
+     
+
+        </div>
+      </form>
+        
+
+      </div>
+    </header>
+
+
+    <!-- Explore Section -->
+
+    <section class="Explores row">
+      <div class="Explore one">
+        <h3>Book your</h3>
+        <h1>Travel package</h1>
+        <img src="./Imgs/home-1.png" alt="Book">
+      </div>
+      <div class="Explore two">
+        <h3>Explore</h3>
+        <h1>Destinations</h1>
+        <img src="./Imgs/home-3.png" alt="explore">
+      </div>
+      <div class="Explore three">
+        <h3>Over 30,000+</h3>
+        <h1>Hotels</h1>
+        <img src="./Imgs/home-2.png" alt="hotels">
+      </div>
+      <div class="Explore four">
+        <h3>Travel Events</h3>
+        <h1>Events </h1>
+        <img src="./Imgs/Event.png" alt="home-4">
+      </div>
+    </section>
+
+
+    <!-- TOP TRAVEL -->
+
+    <section class="top__travel">
+      <div class="center-div row">
+        <h2 class="sub-heading">Top Travel Packages</h2>
+        <div class="title-line">
+          <div class="tl-1"></div>
+          <div class="tl-2"></div>
+          <div class="tl-3"></div>
+        </div>
+        <p class="sub-p">World's leading tour and travels Booking website,Over 30,000 packages worldwide.</p>
+      </div>
+
+      <div class="packages__div row">
+
+        <div class="packages">
+          <div class="package-offer">
+            <img src="./Imgs/JNB.png" alt="Kuala Lumpur">
+            <div class="package-text">
+              <h4>Kuala Lumpur</h4>
+              <p>From Heathrow Economy, Return</p>
+              <h5>£455</h5>
+              <a href="#inquiry" class="package-btn">Call Us For More Info</a>
+            </div>
+
+          </div>
+
+          <div class="package-offer">
+            <img src="./Imgs/BKK.png" alt="Bangkok">
+            <div class="package-text">
+              <h4>Bangkok</h4>
+              <p>From Heathrow Economy, Return</p>
+              <h5>£635</h5>
+              <a href="#inquiry" class="package-btn">Call Us For More Info</a>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="packages">
+          <div class="package-offer">
+            <img src="./Imgs/CPT.png" alt="Cape town">
+            <div class="package-text">
+              <h4>Cape Town</h4>
+              <p>From Heathrow Economy, Return</p>
+              <h5>£530</h5>
+              <a href="#inquiry" class="package-btn">Call Us For More Info</a>
+            </div>
+
+          </div>
+
+          <div class="package-offer">
+            <img src="./Imgs/LAD.png" alt="Luanda">
+            <div class="package-text">
+              <h4>Luanda</h4>
+              <p>From Heathrow Economy, Return</p>
+              <h5>£530</h5>
+              <a href="#inquiry" class="package-btn">Call Us For More Info</a>
+          
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="packages">
+          <div class="package-offer">
+            <img src="./Imgs/CEB.png" alt="Cebu">
+            <div class="package-text">
+              <h4>Cebu</h4>
+              <p>From Heathrow Economy, Return</p>
+              <h5>£890</h5>
+              <a href="#inquiry" class="package-btn">Call Us For More Info</a>
+            
+            </div>
+
+          </div>
+
+          <div class="package-offer">
+            <img src="./Imgs/LOS.png" alt="Lagos">
+            <div class="package-text">
+              <h4>Lagos</h4>
+              <p>From Heathrow Economy, Return</p>
+              <h5>£420</h5>
+              <a href="#inquiry" class="package-btn">Call Us For More Info</a>
+            
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    
+    </section>
+
+
+    <!-- WHY WE 2 -->
+
+    <section class="why__we">
+      <div class="center-div row">
+        <h2 class="sub-heading">Why Choose ? <br> <span class="why__we-span">Premier by Make Trip Travel
+        </span></h2>  
+        <div class="title-line">
+          <div class="tl-1"></div>
+          <div class="tl-2"></div>
+          <div class="tl-3"></div>
+        </div>
+      </div>
+
+      <div class="why__we-parent row">
+        <div class="why__we-childs">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          <h3>Best Price Guarantee</h3>
+          <p>Find out lowest price to destinations worldwide, Guaranteed</p>
+        </div>
+
+
+        <div class="why__we-childs">
+          <i class="fa-solid fa-square-check"></i>
+          <h3>Easy Booking</h3>
+          <p>Search, Select and Save - The fastest way to book your trip</p>
+        </div>
+
+
+        <div class="why__we-childs">
+          <i class="fa-solid fa-phone"></i>
+          <h3>24/7 Customer Care</h3>
+          <p>Get booking assistance and special deals by calling us</p>
+        </div>
+
+
+        <div class="why__we-childs">
+          <i class="fa-solid fa-user-shield"></i>
+          <h3>ATOL Protected</h3>
+          <p>Ensuring your peace of mind, your booking is safe with us</p>
+        </div>
+
+
+        
+      </div>
+      <div class="why__we-btnp row">
+
+        <a  href="tel:+447472906476" class="header__top-btn ">Phone +447472906476</a>
+      </div>
+
+    </section>
+
+ <!-- WHY CHOOSE US -->
+
+ <section class="why__us">
+
+  <div class="center-div row">
+    <h2 class="sub-heading">Why People Choose Us ?</h2>
+    <div class="title-line">
+      <div class="tl-1"></div>
+      <div class="tl-2"></div>
+      <div class="tl-3"></div>
+    </div>
+  </div>
+
+    <div class="why__us-parent row">
+      <div class="why__us-child">
+        <i class="fa-solid fa-euro-sign"></i>
+        <div class="why__us-text">
+          <h3>Best Price Guarantee</h3>
+          <p>We try to ensure your travel within your budget. We regularly work with our suppliers to get and offer you the cheapest prices. Be sure to check Make Trip Travel every day for the cheapest deals and to sign up for newsletter to always be updated for best deals to your favourite destinations.</p>
+        </div>
+      </div>
+      <div class="why__us-child">
+        <i class="fa-solid fa-plane"></i>
+        <div class="why__us-text">
+          <h3>Worlwide Destinations</h3>
+          <p>We offer flights to worldwide destinations from all major airports of UK on all major airlines. Whether you want low cost airfares or top flight service, we work with low-cost carriers to main worldwide airlines to provide the cheapest flight, from economy airfare deals to business class and first class travel
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="why__us-parent row">
+      <div class="why__us-child">
+        <i class="fa-solid fa-phone"></i>
+        <div class="why__us-text">
+          <h3>Expert Customer Support</h3>
+          <p>
+          If you need any help to book your trip and explore the cheap travel option then confidently call our friendly, knowledgable travel specialists to assist you with your travel plans.</p>
+        </div>
+      </div>
+      <div class="why__us-child">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <div class="why__us-text">
+          <h3>Book Now & Pay Later</h3>
+          <p>We have a travel deposit scheme to help you spread the cost and make your travel affordable. Confirm your travel by just paying small deposit of £50 and pay the rest later on desired or defined time intervals.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+ </section>
+  
+<!-- POPULAR DESTINATION -->
+
+<section class="popular__destination">
+  <div class="center-div row">
+    <h2 class="sub-heading">Popular Holiday Destinations</h2>
+    <div class="title-line">
+      <div class="tl-1"></div>
+      <div class="tl-2"></div>
+      <div class="tl-3"></div>
+    </div>
+    <p class="sub-p">World's leading Flight Booking website.Book Flight  now and enjoy your holidays with distinctive experience</p>
+  </div>
+
+  <div class="destination__parent row">
+    <a href="#inquiry">
+      <div class="destination__child">
+        <h3>Dubai</h3>
+        <button class="destination-btn">3nts fr £890 pp </button>
+      </div>
+    </a>
+  
+<a href="#inquiry">
+
+  <div class="destination__child child-1">
+    <h3>Maldives</h3>
+    <button class="destination-btn">7nts fr £810 pp </button>
+  </div>
+</a>
+
+
+<a href="#inquiry">
+
+  <div class="destination__child child-2">
+    <h3>Mauritius</h3>
+    <button class="destination-btn">7nts fr £720 pp </button>
+  </div>
+</a>
+  </div>
+
+
+  <div class="destination__parent row">
+
+    <a href="#inquiry">
+
+      <div class="destination__child child-3">
+        <h3>Caribbean</h3>
+        <button class="destination-btn">7nts fr £1190 pp </button>
+      </div>
+    </a>
+
+
+    <a href="#inquiry">
+
+      <div class="destination__child child-4">
+        <h3>Thailand</h3>
+        <button class="destination-btn">3nts fr £585 pp </button>
+      </div>
+    </a>
+
+    <a href="#inquiry">
+
+      <div class="destination__child child-5">
+        <h3>Turkey</h3>
+        <button class="destination-btn">5nts fr £525 pp </button>
+      </div>
+    </a>
+  </div>
+
+</section>
+
+<!-- Contact Section  -->
+
+
+<section class="Contact book row">
+  <div class="contact_box book_box">
+    <div class="contact_text book_text">
+     <h1> <span>Special Offer </span> </h1>
+     <p>Book Now Pay Later</p>
+    </div>
+    <div class="contact_mail book_mail">
+      <p>Now you can book your Flight with <span>Basic Deposit of £50</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="Contact row">
+  <div class="contact_box">
+    <div class="contact_text">
+     <h1>Need Help ?</h1>
+     <p>Book Your Trip With Us !</p>
+    </div>
+    <div class="Contact_number">
+      <h1>+447472906476</h1>
+    </div>
+    <div class="contact_mail">
+      <p>Send Us Email Enquiry</p>
+      <button>info@maketriptravel.co.uk</button>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
+<div class="footer__parent row">
+  <div class="footer__childs">
+    <div class="footer__img">
+      <h3>30% OFF</h3>
+      <p>Book Your Flight Now</p>
+    </div>
+
+    <div class="footer__img footer-1">
+      <h3>30% OFF</h3>
+      <p>Book Your Flight Now</p>
+    </div>
+
+    <div class="footer__img footer-2">
+      <h3>30% OFF</h3>
+      <p>Book Your Flight Now</p>
+    </div>
+
+    <div class="footer__links">
+      <h3>Most Popular <span>Vacations</span> </h3>
+      <li>London</li>
+      <li>Dubai</li>
+      <li>Maldives</li>
+    </div>
+  </div>
+
+
+
+  <div class="footer__childs">
+
+
+
+    <div class="footer__text">
+      <h3>Popular <span>Destination</span> 
+      </h3>
+      <a href="#inquiry">Berlin Holidays</a> <br>
+      <a href="#inquiry">Frankfurt Holidays</a> <br>
+      <a href="#inquiry">Hamburg Holidays</a> <br>
+      <a href="#inquiry">Nuremberg Holidays</a> <br>
+      <a href="#inquiry">Glassgow Holidays</a> <br>
+      <a href="#inquiry">Belfast Holidays</a> <br>
+      <a href="#inquiry">Skye Holidays</a> <br>
+      <a href="#inquiry">Brimingham Holidays</a> <br>
+      <a href="#inquiry">Los Angeles Holidays</a> <br>
+      <a href="#inquiry">Washington, D.C Holidays</a>
+    </div>
+
+
+    <div class="footer__text">
+      <h3>Address <span> & Contact Info</span>
+      </h3>
+      <p>1 Prestwood Close</p>
+      <p>Urmston</p>
+      <p>Manchester</p>
+      <p>M41 7GA</p>
+    </div>
+
+
+ 
+
+    <div class="footer__text">
+      <h3>Cheapest <span>Flights</span> 
+      </h3>
+      <a href="#inquiry">Flights to San Franciso</a> <br>
+      <a href="#inquiry">Flights to Muscat</a> <br>
+      <a href="#inquiry">Flights to Sydney</a> <br>
+      <a href="#inquiry">Flights to Cancun</a> <br>
+      <a href="#inquiry">Flights to India</a> <br>
+      <a href="#inquiry">Flights to New York</a> <br>
+      <a href="#inquiry">Flights to Dubai</a> <br>
+      <a href="#inquiry">Flights to Toronto</a> <br>
+      <a href="#inquiry">Flights to Bangkok</a> <br>
+      <a href="#inquiry">Flights to Sri Lanka</a>
+    </div>
+  
+  </div>
+</div>
+
+<p class="copy-right row">&copy;Copy Right.All Right Reserved By MakeTripTravel.co.uk</p>
+</footer>
+
+
+
+</body>
+</html>
